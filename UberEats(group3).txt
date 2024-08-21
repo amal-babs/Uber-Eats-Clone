@@ -1,0 +1,13 @@
+UberEats-Clone(group3)
+----------------
+
+Team members-4
+1)Amal
+2)Abhijith
+3)Avani
+4)Shilpa
+
+Main index page- Amal
+Create a business account page- Abhijith
+Add your restaurant page- Shilpa
+Signup to deliver page- Avani
