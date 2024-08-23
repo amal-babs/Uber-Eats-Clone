@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats Store Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-color: yellowgreen;
+            margin: 0;
+            padding: 20px;
+            background-image: url('res3.jpg');
+            
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: 100 auto;
+            background-color:rgb(163, 221, 210);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+            float: right;
+        }
+        .parent1{
+            color: rgb(104, 170, 155);
+            padding: 130px;
+            float: left;
+            text-align: center;
+            
+        }
+        h1 {
+            text-align: center;
+            color:white;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .optional {
+            font-weight: normal;
+            color: #666;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            background-color: #457071;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .submit-btn:hover {
+            background-color: #5ab1a3;
+        }
+        .terms {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+   <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get Started with Uber Eats</h2>
+    <div class="parent1">
+        
+        <h1><b>Add your reaturant to <mark style="background-color: #ccc; color: gray; width: 100px ; height: 100px;">UberEats </mark></b></h1>
+            <br>
+         </div>
+
+    <div class="container">
+
+        
+        
+        <form action="/submit-store-info" method="POST">
+        
+        <label for="store-address">Store Address</label>
+        <input type="text" id="store-address" name="store-address" placeholder="Select..." required>
+
+        <label for="floor-suite">Floor / Suite <span class="optional">(Optional)</span></label>
+        <input type="text" id="floor-suite" name="floor-suite" placeholder="Floor / Suite">
+
+        <label for="store-name">Store Name</label>
+        <input type="text" id="store-name" name="store-name" placeholder="Example: Sam’s Pizza – 123 Main street" required>
+
+        <label for="brand-name">Brand Name</label>
+        <input type="text" id="brand-name" name="brand-name" placeholder="Example: Sam’s Pizza" required>
+
+        <label for="business-type">Business Type</label>
+        <select id="business-type" name="business-type" required>
+            <option value="">Select...</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="cafe">Cafe</option>
+            <option value="food-truck">Food Truck</option>
+            <option value="bakery">Bakery</option>
+            <!-- Add other business types as needed -->
+        </select>
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Mobile Phone Number</label>
+        <div style="display: flex;">
+            <select style="width: 20%;" required>
+                <option value="+91">🇮🇳 +91</option>
+                <!-- Add other country codes as needed -->
+            </select>
+            <input type="text" id="phone" name="phone" style="width: 80%;" placeholder="Enter your mobile number" required>
+        </div>
+
+        <div class="terms">
+            By clicking "Submit", you agree to the <a href="https://merchants.ubereats.com/merchant-terms-and-conditions/" target="_blank">Uber Eats Merchant Terms and Conditions</a> and acknowledge you have read the <a href="https://privacy.uber.com/policy" target="_blank">Privacy Notice</a>.
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+
+</body>
+</html>
