@@ -8,12 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             
-            background-color: yellowgreen;
+            background-color: black;
             margin: 0;
             padding: 20px;
-            background-image: url('/Templates/res3.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            
+           
             
         }
         .container {
@@ -21,16 +20,24 @@
             margin: 100 auto;
             background-color:rgb(163, 221, 210);
             padding: 30px;
-            border-radius: 8px;
+            
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             
             float: right;
         }
         .parent1{
+            display: flex;
+        
+        }
+        .parent2{
             color: rgb(104, 170, 155);
-            padding: 130px;
+            padding: 200px;
             float: left;
             text-align: center;
+            background-image: url('/Templates/res3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
             
         }
         h1 {
@@ -42,6 +49,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
+            color: white;
         }
         input[type="text"],
         input[type="email"],
@@ -77,19 +85,28 @@
             font-size: 14px;
             color: #666;
         }
+        
     </style>
 </head>
 <body>
-   <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get Started with Uber Eats</h2>
-    <div class="parent1">
-        
-        <h1><b>Add your restaurant to <mark style="background-color: #ccc; color: gray; width: 100px ; height: 100px;">UberEats </mark></b></h1>
-            <br>
+   <p style="color: white;"><b>UberEats <br> for Merchants</b>
+
+   
+</p>
+   <div class="parent1">
+    <div class="parent2">
+        <br><br>
+        <h1><b>Add your restaurant to <mark style="background-color: #ccc; color: gray; width: 100px ; height: 100px;">UberEats 
+        </mark></b></h1>
+        <br><br>
+            <p style="color: white; font-size: large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Uber’s global platform gives you the flexibility, 
+            visibility and customer insights you need to connect with more customers.
+             Partner with us today.</p>
          </div>
 
     <div class="container">
 
-        
+        <h1>Get Started with <span style="color: rgb(249, 253, 253);">UbderEats</span></h1>
         
         <form action="/submit-store-info" method="POST">
         
@@ -141,6 +158,6 @@
     </form>
 </div>
 
-
+</div>
 </body>
 </html>
